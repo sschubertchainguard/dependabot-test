@@ -5,6 +5,3 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
-allow:
-  - dependency-name: "go-msft-fips"
-    versions: ["1.20.*"]
