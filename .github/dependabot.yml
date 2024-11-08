@@ -1,9 +1,9 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/" # Location of Dockerfiles or Kubernetes manifests
+    directory: "/"
     schedule:
-      interval: "weekly" # Adjust as needed: daily, weekly, or monthly
+      interval: "weekly"
     open-pull-requests-limit: 5
 allow:
   - dependency-name: "go-msft-fips"
