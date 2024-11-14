@@ -3,8 +3,6 @@ registries:
   chainguard: # Define access for a private registry
     type: docker-registry
     url: cgr.dev
-    key: ${{secrets.PULL_TOKEN_ID}}
-    token: ${{secrets.PULL_TOKEN_PW}}
 updates:
   - package-ecosystem: "docker"
     directory: "/"
