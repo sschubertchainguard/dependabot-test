@@ -1,15 +1,15 @@
 version: 2
-registries:
-  chainguard: # Define access for a private registry
-    type: docker-registry
-    url: cgr.dev
-    username: ${{secrets.PULL_TOKEN_ID}}
-    password: ${{secrets.PULL_TOKEN_PW}}
+# registries:
+#   chainguard: # Define access for a private registry
+#     type: docker-registry
+#     url: cgr.dev
+#     username: ${{secrets.PULL_TOKEN_ID}}
+#     password: ${{secrets.PULL_TOKEN_PW}}
 updates:
   - package-ecosystem: "docker"
     directory: "/"
-    registries:
-      - chainguard
+    # registries:
+    #   - chainguard
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
