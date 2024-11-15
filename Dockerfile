@@ -1,4 +1,4 @@
-FROM cgr.dev/scorwin.dev/go-msft-fips:1.23.2.0
+FROM cgr.dev/scorwin.dev/go-msft-fips:1.23.2.1
 
 WORKDIR /app
 
