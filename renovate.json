@@ -3,4 +3,11 @@
   "extends": [
     "config:recommended"
   ]
+   "hostRules": [
+    {
+      "hostType": "docker",
+      "matchHost": "cgr.dev",
+      "username": "${{secrets.PULL_TOKEN_ID}}",
+      "password": "${{secrets.PULL_TOKEN_PW}}"
+     }]
 }
