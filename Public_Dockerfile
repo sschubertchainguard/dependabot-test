@@ -1,0 +1,4 @@
+FROM cgr.dev/chainguard/prometheus:latest@sha256:62f40add7f94292f236f885cd98004d5eef6bbae3e6b1b540cd4dd299ceaa5f3
+
+RUN echo hello
+FROM cgr.dev/chainguard/prometheus:latest@sha256:f71e629e469117db4b666b106aeb9f929d72487e9b2ae5241626f9177042f11c
