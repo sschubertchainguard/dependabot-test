@@ -7,7 +7,7 @@ version: 2
 #     password: ${{secrets.PULL_TOKEN_PW}}
 updates:
   - package-ecosystem: "docker"
-    directory: "/.*"
+    directory: "/test.*/"
     # registries:
     #   - chainguard
     schedule:
