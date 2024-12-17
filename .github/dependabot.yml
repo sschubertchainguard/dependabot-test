@@ -1,18 +1,18 @@
 version: 2
-# registries:
-#   chainguard:
-#     type: docker-registry
-#     url: cgr.dev
-#     username: ${{secrets.PULL_TOKEN_ID}}
-#     password: ${{secrets.PULL_TOKEN_PW}}
+registries:
+  chainguard:
+    type: docker-registry
+    url: cgr.dev
+    username: ${{secrets.PULL_TOKEN_ID}}
+    password: ${{secrets.PULL_TOKEN_PW}}
 updates:
   - package-ecosystem: "docker"
     directories:
       - "/test1"
       - "/test2"
-      # - "/test3"
-    # registries:
-    #   - chainguard
+      - "/test3"
+    registries:
+      - chainguard
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
